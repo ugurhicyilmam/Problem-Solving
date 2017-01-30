@@ -4,9 +4,9 @@ package com.ugurhicyilmam.sol;
  * Question: Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
  * Solution: Use an array to keep boolean flags for each character.
  */
-final class AllUnique {
+final class UniquenessChecker {
 
-    private AllUnique() {
+    private UniquenessChecker() {
 
     }
 
