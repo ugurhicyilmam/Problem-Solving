@@ -1,4 +1,4 @@
-package com.ugurhicyilmam.sol;
+package com.ugurhicyilmam.solutions;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.ugurhicyilmam.sol;
+package com.ugurhicyilmam.solutions;
 
 /**
  * Question: Write a method to decide if one string is permutation of the other.

@@ -1,4 +1,4 @@
-package com.ugurhicyilmam.sol;
+package com.ugurhicyilmam.solutions;
 
 /**
  * Question: Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
