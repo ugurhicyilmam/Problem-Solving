@@ -1,9 +1,5 @@
 package com.ugurhicyilmam.ctci.ch1;
 
-/**
- * Question: Write a method to decide if one string is permutation of the other.
- * Solution: Count number of characters in each string, then compare this character counts to check if they are permutations.
- */
 final class Q2 {
 
     private Q2() {
