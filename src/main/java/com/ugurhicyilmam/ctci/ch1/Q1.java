@@ -1,16 +1,16 @@
-package com.ugurhicyilmam.solutions;
+package com.ugurhicyilmam.ctci.ch1;
 
 /**
  * Question: Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
  * Solution: Use an array to keep boolean flags for each character.
  */
-final class UniquenessChecker {
+public final class Q1 {
 
-    private UniquenessChecker() {
+    private Q1() {
 
     }
 
-    static boolean isAllUnique(String str) {
+    public static boolean isAllUnique(String str) {
         if (str == null || str.length() < 1 || str.length() > 256)
             return false;
 
