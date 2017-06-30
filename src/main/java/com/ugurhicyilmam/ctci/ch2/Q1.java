@@ -14,12 +14,16 @@ class Q1 {
 
         LinkedListNode currentNode = head;
         LinkedListNode runner = null;
+        LinkedListNode runnerParent = null;
 
         while (currentNode != null) {
             runner = currentNode.getNext();
+            runnerParent = currentNode;
             while (runner != null) {
                 if (currentNode.getValue() == runner.getValue()) {
-                    currentNode.setNext(runner.getNext()); // remove runner
+                    runnerParent.setNext(runner.getNext()); // remove runner
+                } else {
+                    runnerParent = runner;
                 }
                 runner = runner.getNext();
             }
@@ -39,9 +43,10 @@ class Q1 {
         while (currentNode != null) {
             if (values.contains(currentNode.getValue()))
                 parentNode.setNext(currentNode.getNext()); // remove current node
-            else
+            else {
                 values.add(currentNode.getValue());
-            parentNode = currentNode;
+                parentNode = currentNode;
+            }
             currentNode = currentNode.getNext();
         }
     }
