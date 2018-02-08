@@ -4,6 +4,7 @@ class TreeNode {
     private int value;
     private TreeNode left;
     private TreeNode right;
+    private int depth;
 
     public TreeNode(int value) {
         this.value = value;
@@ -27,6 +28,14 @@ class TreeNode {
 
     public void setRight(TreeNode right) {
         this.right = right;
+    }
+
+    public int getDepth() {
+        return depth;
+    }
+
+    public void setDepth(int depth) {
+        this.depth = depth;
     }
 }
 
