@@ -1,6 +1,8 @@
 package com.ugurhicyilmam.ctci.ch4;
 
 class BinarySearchTree {
+
+
     private TreeNode root;
     private int depth;
 
@@ -14,7 +16,7 @@ class BinarySearchTree {
         TreeNode current = root;
 
         while (current != null) {
-            if (current.getValue() <= value) {
+            if (current.getValue() >= value) {
                 if (current.getLeft() == null) {
                     current.setLeft(new TreeNode(value));
                     return;
@@ -71,5 +73,9 @@ class BinarySearchTree {
         }
         levels(this.root, 1);
         return depth;
+    }
+
+    public TreeNode getRoot() {
+        return root;
     }
 }
